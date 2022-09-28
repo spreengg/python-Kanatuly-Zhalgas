@@ -1,0 +1,47 @@
+1. Что такое файл?
+
+Collection of data stored under
+a specific name. Each file on the disk has a designation consisting
+of two parts: a name and an extension.
+
+
+2. Какие требования предъявляются к именам файлов?
+
+The name consists of characters (uppercase and lowercase Latin letters,
+numbers and symbols: !, @, #, %, ^, &, (, ), ", ~, -, _ ).!
+The extension is separated from the name by a dot, contains up to three
+allowed characters, for example: spisok.txt , kontakty.dat, go_my.exe 
+
+
+3. Зачем используется файловая переменная?
+
+To work with a specific physical file on disk, you need to present a so-called 
+file variable in the program and make its logical connection with this file.
+
+
+4. Назначение r, w, t, a, b, +, close?
+
+r – open the file for reading
+w – open a file for writing
+x – create a file. At the same time, if the file exists, the call
+to the open() function will fail
+a – open the file for writing, while new data will
+be added to the end of the file, without deleting existing ones
+b – binary mode
+t – text mode
++ – opens the file for updating
+
+
+5. Создать файл, содержащий 10 значений типа float. Вычислите
+произведение его элементов.
+6. Создать файл, содержащий таблицу умножения 10 значений типа integer.
+
+
+7. Составьте программу, которая считывает текст из файла.
+text = input() 
+f = open ('text.txt', 'w')
+f.write (text)
+f.close()
+f = open("text.txt", "r")
+f.read()
+f.close()
